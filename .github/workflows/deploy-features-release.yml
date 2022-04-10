@@ -2,7 +2,8 @@ name: 'Deploy Features'
 on:
   push:
     tags:
-    - 'v*'
+    # Trigger on new Sember tag
+    - '[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   deploy: # make sure the action works on a clean machine without building
