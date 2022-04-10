@@ -1,27 +1,14 @@
 {
     "features": [
         {
-            "id": "helloworld",
-            "name": "My First Feature",
+            "id": "pulumi",
+            "name": "Pulumi",
             "options": {
-                "greeting": {
+                "version": {
                     "type": "string",
-                    "proposals": [ "hey", "hello", "hi", "howdy" ],
-                    "default": "hey",
-                    "description": "Select a pre-made greeting, or enter your own"
-                }
-            },
-            "include": ["ubuntu"]
-        },
-        {
-            "id": "color",
-            "name": "A feature to remind you of your favorite color",
-            "options": {
-                "favorite": {
-                    "type": "string",
-                    "enum": [ "red", "gold", "green" ],
-                    "default": "red",
-                    "description": "Choose your favorite color."
+                    "proposals": ["latest"],
+                    "default": "latest",
+                    "description": "Desired version of Pulumi. See: https://www.pulumi.com/docs/get-started/install/versions/"
                 }
             },
             "include": ["ubuntu"]
